@@ -17,7 +17,7 @@ class Test extends DuskTestCase
             $browser->clickLink('Login');
             $browser->visit('/login');
             $browser->type('email', 'johndoe@gmail.com');
-            $browser->type('password', 'evangelion');
+            $browser->type('password', 'password123');
             $browser->press('Login');
             $browser->assertPathIs('/home');
         });
